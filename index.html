@@ -6,8 +6,16 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script>
+
+  	function hideTest(){
+  		if($(".test").length){
+  			$("test").hide();
+  		}
+  	}
+
   	$(document).ready(function(){
-  		confirm("Alert test");
+  		hideTest();
+  		alert("Alert test");
   	})
   </script>
 
