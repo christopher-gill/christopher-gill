@@ -6,6 +6,9 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script>
+  	$(".noscript-hint").each(function(index, item){
+  		$(item).hide();
+  	});
   </script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -14,6 +17,10 @@
 		<h1>
 			Hello World
 		</h1>
-		<input autocomplete="off" class="InputText" data-val="true" data-val-date="The field must have a value" id="TestDate" placeholder="dd/mm/yyyy" reformatDate="true" type="date">
+
+		<div class='hint'>
+			<div class='one'><span class='noscript-hint'>If you have selected X.</span> then do the thing.</div>
+			<div class='two'><span class='noscript-hint'>If you have selected y.</span> then do the other thing.</div>
+		</div>
 	</body>
 </html>
